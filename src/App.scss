@@ -11,7 +11,23 @@
     font-size: 0.9em;
   }
 }
+.Home {
+  .Links {
+    margin: 10px;
+  }
 
+  div {
+    background-color: rgb(240, 240, 240);
+  }
+  a {
+    text-decoration: none;
+    color: rgb(21, 20, 26);
+    font-size: 0.9em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+}
 .BeerList {
   h1 {
     margin: 20px 0 0 50px;

@@ -23,11 +23,13 @@ class BeerList extends Component {
       <div className="BeerList">
         <h1>Beer List</h1>
         <ul>
-          {this.state.list.map((beer, index) => (
+          {this.state.list.map((beer) => (
             <li key={beer._id}>
-              <Link to={`/beer/${index + 1}`}>
+              <Link to={`/beer/${beer._id}`}>
                 <img src={beer.image_url} alt="{beer.name}" />
-                {beer.name}
+                {beer.name} <br />
+                {beer.tagline} <br />
+                {beer.contributed_by} <br />
               </Link>
             </li>
           ))}

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.scss';
 import Navbar from './components/Navbar';
+import Home from './views/Home';
 import BeerList from './views/BeerList';
 import SingleBeer from './views/SingleBeer';
 
@@ -11,8 +12,9 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Switch>
-      <Route path="/" component={BeerList} exact />
-      <Route path="/pokemon/:id" component={SingleBeer} exact />
+        <Route path="/" component={Home} exact />
+        <Route path="/beer" component={BeerList} exact />
+        <Route path="/beer/:id" component={SingleBeer} exact />
       </Switch>
     </BrowserRouter>
   );
